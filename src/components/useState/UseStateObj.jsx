@@ -13,7 +13,7 @@ const UseStateObj = () => {
 
     setName((prev) => {
       return { ...prev, [name]: value };
-    }); //to add prev value and change with new value
+    });
   };
   return (
     <>
