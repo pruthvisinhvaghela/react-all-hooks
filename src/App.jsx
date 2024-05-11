@@ -1,13 +1,14 @@
 import "./App.css";
-import PropsDemo from "./components/PropsDemo";
+import UseEffectDemo from "./components/useEffect/UseEffectDemo";
+// import PropsDemo from "./components/PropsDemo";
 // import Test from "./components/Test";
 // import UseStateObj from "./components/useState/UseStateObj";
 // import UseState from "./components/useState/UseState";
 function App() {
-  const arr = [1, 2, 3, 3, 2, 34, 4];
   return (
     <>
-      <PropsDemo data={arr} />
+      <UseEffectDemo />
+      {/* <PropsDemo data={arr} /> */}
       {/* <Test /> */}
       {/* <UseState /> */}
       {/* <UseStateObj /> */}
