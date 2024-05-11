@@ -1,15 +1,16 @@
 import "./App.css";
-
-import UseRefDemo from "./components/useRef/UseRefDemo";
-
+import ChildA from "./components/child/ChildA";
+// import UseRefDemo from "./components/useRef/UseRefDemo";
 // import PropsDemo from "./components/PropsDemo";
 // import Test from "./components/Test";
 // import UseStateObj from "./components/useState/UseStateObj";
 // import UseState from "./components/useState/UseState";
 function App() {
+  const name = "pruthvi";
   return (
     <>
-      <UseRefDemo />
+      <ChildA value={name} />
+      {/* <UseRefDemo /> */}
       {/* <PropsDemo data={arr} /> */}
       {/* <Test /> */}
       {/* <UseState /> */}
