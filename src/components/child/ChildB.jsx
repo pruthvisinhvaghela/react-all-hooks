@@ -1,16 +1,21 @@
 import MyContext from "./MyContext";
-import { useContext } from "react";
+import MyContextTwo from "./MyContextTwo";
+
 const ChildB = () => {
-  const name = useContext(MyContext);
   return (
     <div>
-      <div>outer name is {name}</div>
       <MyContext.Consumer>
         {(name) => {
           return (
-            <>
-              <h1>hello my name is {name} </h1>
-            </>
+            <MyContextTwo.Consumer>
+              {(data) => {
+                return (
+                  <h1>
+                    hello my name is {name} and my age is {data}
+                  </h1>
+                );
+              }}
+            </MyContextTwo.Consumer>
           );
         }}
       </MyContext.Consumer>
