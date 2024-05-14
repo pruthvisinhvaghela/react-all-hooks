@@ -1,6 +1,7 @@
-import { createContext } from "react";
 import "./App.css";
-import ChildOne from "./components/useContext/ChildOne";
+import UseMemoExample from "./components/useMemo/UseMemoExample";
+// import { createContext } from "react";
+// import ChildOne from "./components/useContext/ChildOne";
 // import ChildA from "./components/child/ChildA";
 // import MyContext from "./components/child/MyContext";
 // import MyContextTwo from "./components/child/MyContextTwo";
@@ -11,19 +12,20 @@ import ChildOne from "./components/useContext/ChildOne";
 // import UseStateObj from "./components/useState/UseStateObj";
 // import UseState from "./components/useState/UseState";
 
-const data = createContext();
-const data1 = createContext();
+// const data = createContext();
+// const data1 = createContext();
 function App() {
-  // for context api we follow three thing: create, provide, consume
-  const name = "pruthvi";
-  const age = 23;
+  // // for context api we follow three thing: create, provide, consume
+  // const name = "pruthvi";
+  // const age = 23;
   return (
     <>
-      <data.Provider value={name}>
+      <UseMemoExample />
+      {/* <data.Provider value={name}>
         <data1.Provider value={age}>
           <ChildOne />
         </data1.Provider>
-      </data.Provider>
+      </data.Provider> */}
       {/* above is for new useContext and bellow is for create context  */}
       {/* <MyContext.Provider value={name}>
         <MyContextTwo.Provider value={age}>
@@ -40,4 +42,4 @@ function App() {
 }
 
 export default App;
-export { data, data1 };
+// export { data, data1 };
