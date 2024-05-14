@@ -1,24 +1,35 @@
+import { createContext } from "react";
 import "./App.css";
-import ChildA from "./components/child/ChildA";
-import MyContext from "./components/child/MyContext";
-import MyContextTwo from "./components/child/MyContextTwo";
-import MycontextTwo from "./components/child/MyContextTwo";
+import ChildOne from "./components/useContext/ChildOne";
+// import ChildA from "./components/child/ChildA";
+// import MyContext from "./components/child/MyContext";
+// import MyContextTwo from "./components/child/MyContextTwo";
+// import MycontextTwo from "./components/child/MyContextTwo";
 // import UseRefDemo from "./components/useRef/UseRefDemo";
 // import PropsDemo from "./components/PropsDemo";
 // import Test from "./components/Test";
 // import UseStateObj from "./components/useState/UseStateObj";
 // import UseState from "./components/useState/UseState";
+
+const data = createContext();
+const data1 = createContext();
 function App() {
-  // for cntext api we follow three thing: create, provide, consume
+  // for context api we follow three thing: create, provide, consume
   const name = "pruthvi";
   const age = 23;
   return (
     <>
-      <MyContext.Provider value={name}>
+      <data.Provider value={name}>
+        <data1.Provider value={age}>
+          <ChildOne />
+        </data1.Provider>
+      </data.Provider>
+      {/* above is for new useContext and bellow is for create context  */}
+      {/* <MyContext.Provider value={name}>
         <MyContextTwo.Provider value={age}>
           <ChildA />
         </MyContextTwo.Provider>
-      </MyContext.Provider>
+      </MyContext.Provider> */}
       {/* <UseRefDemo /> */}
       {/* <PropsDemo data={arr} /> */}
       {/* <Test /> */}
@@ -29,3 +40,4 @@ function App() {
 }
 
 export default App;
+export { data, data1 };
