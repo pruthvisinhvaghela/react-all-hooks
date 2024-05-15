@@ -1,5 +1,7 @@
 import "./App.css";
-import UseMemoExample from "./components/useMemo/UseMemoExample";
+
+import UseCallbackDemo from "./components/useCallback/UseCallbackDemo";
+// import UseMemoExample from "./components/useMemo/UseMemoExample";
 // import { createContext } from "react";
 // import ChildOne from "./components/useContext/ChildOne";
 // import ChildA from "./components/child/ChildA";
@@ -9,6 +11,7 @@ import UseMemoExample from "./components/useMemo/UseMemoExample";
 // import UseRefDemo from "./components/useRef/UseRefDemo";
 // import PropsDemo from "./components/PropsDemo";
 // import Test from "./components/Test";
+// import UseEffectDemo from "./components/useEffect/UseEffectDemo";
 // import UseStateObj from "./components/useState/UseStateObj";
 // import UseState from "./components/useState/UseState";
 
@@ -20,7 +23,9 @@ function App() {
   // const age = 23;
   return (
     <>
-      <UseMemoExample />
+      <UseCallbackDemo />
+      {/* <UseMemoExample /> */}
+      {/* <UseEffectDemo /> */}
       {/* <data.Provider value={name}>
         <data1.Provider value={age}>
           <ChildOne />
