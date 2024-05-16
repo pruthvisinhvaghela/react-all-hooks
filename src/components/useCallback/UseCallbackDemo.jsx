@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useCallback, useState } from "react";
 import ChildA from "./ChildA";
 const UseCallbackDemo = () => {

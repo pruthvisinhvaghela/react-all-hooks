@@ -1,6 +1,6 @@
 import "./App.css";
 
-import UseCallbackDemo from "./components/useCallback/UseCallbackDemo";
+// import UseCallbackDemo from "./components/useCallback/UseCallbackDemo";3
 // import UseMemoExample from "./components/useMemo/UseMemoExample";
 // import { createContext } from "react";
 // import ChildOne from "./components/useContext/ChildOne";
@@ -23,7 +23,7 @@ function App() {
   // const age = 23;
   return (
     <>
-      <UseCallbackDemo />
+      {/* <UseCallbackDemo /> */}
       {/* <UseMemoExample /> */}
       {/* <UseEffectDemo /> */}
       {/* <data.Provider value={name}>
