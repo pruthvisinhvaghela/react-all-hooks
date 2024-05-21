@@ -1,5 +1,7 @@
 import "./App.css";
 
+import FormExample from "./components/Form/FormExample";
+// import FormDemo from "./components/Form/FormDemo";
 // import UseCallbackDemo from "./components/useCallback/UseCallbackDemo";3
 // import UseMemoExample from "./components/useMemo/UseMemoExample";
 // import { createContext } from "react";
@@ -23,6 +25,9 @@ function App() {
   // const age = 23;
   return (
     <>
+      <FormExample />
+
+      {/* <FormDemo /> */}
       {/* <UseCallbackDemo /> */}
       {/* <UseMemoExample /> */}
       {/* <UseEffectDemo /> */}
