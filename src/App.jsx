@@ -1,7 +1,8 @@
 import "./App.css";
-import FormDemoTwo from "./components/Form/FormDemoTwo";
 
-import FormExample from "./components/Form/FormExample";
+import StateUpComp from "./components/stateUp/StateUpComp";
+// import FormDemoTwo from "./components/Form/FormDemoTwo";
+// import FormExample from "./components/Form/FormExample";
 // import FormDemo from "./components/Form/FormDemo";
 // import UseCallbackDemo from "./components/useCallback/UseCallbackDemo";3
 // import UseMemoExample from "./components/useMemo/UseMemoExample";
@@ -24,9 +25,13 @@ function App() {
   // // for context api we follow three thing: create, provide, consume
   // const name = "pruthvi";
   // const age = 23;
+  function getData(data) {
+    console.log(`i am present from app component ${data}`);
+  }
   return (
     <>
-      <FormDemoTwo />
+      <StateUpComp getData={getData} />
+      {/* <FormDemoTwo /> */}
       {/* <FormExample /> */}
       {/* <FormDemo /> */}
       {/* <UseCallbackDemo /> */}
