@@ -1,4 +1,5 @@
 import "./App.css";
+import FormDemoTwo from "./components/Form/FormDemoTwo";
 
 import FormExample from "./components/Form/FormExample";
 // import FormDemo from "./components/Form/FormDemo";
@@ -25,8 +26,8 @@ function App() {
   // const age = 23;
   return (
     <>
-      <FormExample />
-
+      <FormDemoTwo />
+      {/* <FormExample /> */}
       {/* <FormDemo /> */}
       {/* <UseCallbackDemo /> */}
       {/* <UseMemoExample /> */}
