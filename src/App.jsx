@@ -1,4 +1,5 @@
 import "./App.css";
+import List from "./components/List/List";
 
 import StateUpComp from "./components/stateUp/StateUpComp";
 // import FormDemoTwo from "./components/Form/FormDemoTwo";
@@ -25,12 +26,14 @@ function App() {
   // // for context api we follow three thing: create, provide, consume
   // const name = "pruthvi";
   // const age = 23;
-  function getData(data) {
-    console.log(`i am present from app component ${data}`);
-  }
+  // function getData(data) {
+  // // for stateUp component
+  //   console.log(`i am present from app component ${data}`);
+  // }
   return (
     <>
-      <StateUpComp getData={getData} />
+      <List />
+      {/* <StateUpComp getData={getData} /> */}
       {/* <FormDemoTwo /> */}
       {/* <FormExample /> */}
       {/* <FormDemo /> */}
