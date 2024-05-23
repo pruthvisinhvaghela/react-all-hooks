@@ -1,7 +1,8 @@
 import "./App.css";
-import List from "./components/List/List";
 
-import StateUpComp from "./components/stateUp/StateUpComp";
+import UseStateObjTwo from "./components/useState/UseStateObjTwo";
+// import List from "./components/List/List";
+// import StateUpComp from "./components/stateUp/StateUpComp";
 // import FormDemoTwo from "./components/Form/FormDemoTwo";
 // import FormExample from "./components/Form/FormExample";
 // import FormDemo from "./components/Form/FormDemo";
@@ -32,7 +33,8 @@ function App() {
   // }
   return (
     <>
-      <List />
+      <UseStateObjTwo />
+      {/* <List /> */}
       {/* <StateUpComp getData={getData} /> */}
       {/* <FormDemoTwo /> */}
       {/* <FormExample /> */}
