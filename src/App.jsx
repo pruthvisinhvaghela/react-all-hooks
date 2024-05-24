@@ -1,6 +1,7 @@
 import "./App.css";
 
-import UseStateObjTwo from "./components/useState/UseStateObjTwo";
+import UsestateArray from "./components/useState/UsestateArray";
+// import UseStateObjTwo from "./components/useState/UseStateObjTwo";
 // import List from "./components/List/List";
 // import StateUpComp from "./components/stateUp/StateUpComp";
 // import FormDemoTwo from "./components/Form/FormDemoTwo";
@@ -33,7 +34,8 @@ function App() {
   // }
   return (
     <>
-      <UseStateObjTwo />
+      <UsestateArray />
+      {/* <UseStateObjTwo /> */}
       {/* <List /> */}
       {/* <StateUpComp getData={getData} /> */}
       {/* <FormDemoTwo /> */}
